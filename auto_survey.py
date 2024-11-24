@@ -72,7 +72,7 @@ for responden_data in responden:
     time.sleep(3)
 
     try:
-        #jika perlu mengisi kolom lain maka perlu mencari element yang tekait pada inspect element chrome
+        #jika ingin mengisi kolom lain maka perlu mencari element yang tekait pada inspect element chrome
         # Isi Nama
         nama_field = driver.find_element(By.XPATH, '//input[@aria-labelledby="i1 i4"]')
         nama_field.send_keys(responden_data["nama"])
